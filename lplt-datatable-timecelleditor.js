@@ -104,48 +104,11 @@ renderForm : function() {
     this.selects[ 1 ] = Dom.get( elId + "-mins" );
 
 
-        if(this.disableBtns) {
-            this.handleDisabledBtns();
-        }
-        
-            
-    /*
-
-    if(lang.isArray(this.checkboxOptions)) {
-        var checkboxOption, checkboxValue, checkboxId, elLabel, j, len;
-        
-        // Create the checkbox buttons in an IE-friendly way...
-        for(j=0,len=this.checkboxOptions.length; j<len; j++) {
-            checkboxOption = this.checkboxOptions[j];
-            checkboxValue = lang.isValue(checkboxOption.value) ?
-                    checkboxOption.value : checkboxOption;
-
-            checkboxId = this.getId() + "-chk" + j;
-            this.getContainerEl().innerHTML += "<input type=\"checkbox\"" +
-                    " id=\"" + checkboxId + "\"" + // Needed for label
-                    " value=\"" + checkboxValue + "\" />";
-            
-            // Create the labels in an IE-friendly way
-            elLabel = this.getContainerEl().appendChild(document.createElement("label"));
-            elLabel.htmlFor = checkboxId;
-            elLabel.innerHTML = lang.isValue(checkboxOption.label) ?
-                    checkboxOption.label : checkboxOption;
-        }
-        
-        // Store the reference to the checkbox elements
-        var allCheckboxes = [];
-        for(j=0; j<len; j++) {
-            allCheckboxes[allCheckboxes.length] = this.getContainerEl().childNodes[j*2];
-        }
-        this.checkboxes = allCheckboxes;
-
-        if(this.disableBtns) {
-            this.handleDisabledBtns();
-        }
+    if(this.disableBtns) {
+        this.handleDisabledBtns();
     }
-    else {
-    }
-    */
+        
+
 },
 
 /**
