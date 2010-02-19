@@ -197,8 +197,12 @@ focus : function() {
  *
  * @method getInputValue
  */
-getInputValue : function() {
-    return this.selects[0].selectedIndex + ":" + this.selects[1].selectedIndex;
+getInputValue : function() { 
+    var h = this.selects[0].selectedIndex,
+        m = this.selects[1].selectedIndex;
+        
+    return ( h < 10 ? "0" : "" ) + h + ":" + ( m < 10 ? "0" : "" ) + m ;
+    
 }
 
 });
