@@ -170,13 +170,17 @@ handleDisabledBtns : function() {
  */
 resetForm : function() {
 
-  if( this.value.indexOf( ':' ) !== -1 ){
+  if( lang.isString( this.value ) && this.value.indexOf( ':' ) !== -1 ){
     
     var arTime = this.value.split( ':' );
     this.selects[ 0 ].selectedIndex = arTime[ 0 ];
     this.selects[ 1 ].selectedIndex = arTime[ 1 ];
     
+  } else {
+    this.selects[ 0 ].selectedIndex = 0;
+    this.selects[ 1 ].selectedIndex = 0;
   }
+    
     
 },
 
