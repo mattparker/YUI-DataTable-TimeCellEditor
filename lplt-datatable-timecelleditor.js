@@ -174,8 +174,8 @@ getInputValue : function() {
 
 });
 
-// Copy static members to CheckboxCellEditor class
-lang.augmentObject(widget.CheckboxCellEditor, BCE);
+// Copy static members to TimeCellEditor class
+lang.augmentObject(widget.TimeCellEditor, BCE);
 
 
 
