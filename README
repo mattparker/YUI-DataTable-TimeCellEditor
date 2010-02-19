@@ -1,0 +1,22 @@
+README    
+
+The TimeCellEditor class provides functionality for inline editing
+DataTable cell data that are times.
+
+It uses 24 hour clock, giving a form element with two select elements, one for
+hours and one for minutes.  It expects times in the data cells to be in
+format hh:mm.
+
+
+Can be setup in the same way as other editors, in the datatable column defn:
+
+{key:"time", editor: new YAHOO.widget.TimeCellEditor({disableBtns:true})}
+
+No extra config options are available over the BaseCellEditor.
+
+
+
+
+Matt Parker
+Lamplight Database Systems Limited
+19/02/2010.
